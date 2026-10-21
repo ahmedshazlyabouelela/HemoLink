@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#122237">
+  <meta name="description" content="HemoLink: explore blood distribution, constrained transportation, VAM, LCM and bounded MODI in an interactive operations research studio.">
+  <title>HemoLink — Blood Distribution Studio</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='11' fill='%23dc3651'/%3E%3Cpath d='M20 7C17 13 10 20 10 25a10 10 0 0 0 20 0c0-5-7-12-10-18Z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="solver.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div id="app"><div class="initial-loader"><span class="loader-drop"></span><strong>HemoLink</strong><p>Preparing your distribution studio…</p></div></div>
+  <dialog id="guide-dialog" aria-labelledby="guide-title"></dialog>
+  <dialog id="data-dialog" aria-labelledby="data-title"></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <input id="import-file" type="file" accept="application/json,.json" hidden>
+  <noscript>This dashboard needs JavaScript for its local optimization engine. Enable JavaScript to explore the project.</noscript>
+</body>
+</html>
